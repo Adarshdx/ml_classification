@@ -54,6 +54,71 @@ A binary classification system that predicts churn probability using customer de
 - ✅ **Docker support** for easy deployment
 
 ---
+### structure
+churn-prediction-ml-project/
+├── .gitignore
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── setup.py
+├── Makefile
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── data/
+│   ├── README.md
+│   ├── raw/
+│   │   └── .gitkeep
+│   └── processed/
+│       └── .gitkeep
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_model_training.ipynb
+│   └── README.md
+├── src/
+│   ├── __init__.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── make_dataset.py
+│   │   └── preprocess.py
+│   ├── features/
+│   │   ├── __init__.py
+│   │   └── build_features.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── train_model.py
+│   │   └── predict_model.py
+│   └── visualization/
+│       ├── __init__.py
+│       └── visualize.py
+├── reports/
+│   ├── figures/
+│   │   └── .gitkeep
+│   ├── final_report.md
+│   └── model_metrics.json
+├── tests/
+│   ├── __init__.py
+│   ├── test_data.py
+│   ├── test_features.py
+│   └── test_models.py
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+├── config/
+│   └── config.yaml
+├── app/
+│   ├── __init__.py
+│   ├── app.py
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   └── js/
+│   │       └── main.js
+│   └── templates/
+│       └── index.html
+└── docs/
+    ├── api.md
+    └── setup_guide.md
 
 ## 🏆 Key Results
 
