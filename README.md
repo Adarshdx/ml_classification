@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔮 Customer Churn Prediction
+#  Customer Churn Prediction
 
 ## End-to-End Machine Learning Classification Project
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Project Overview](#project-overview)
 - [Key Results](#key-results)
 - [Live Demo](#live-demo)
@@ -36,7 +36,7 @@
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 This repository contains a **production-ready machine learning system** that predicts customer churn for a telecommunications company. The project demonstrates a complete ML pipeline from data preprocessing to model deployment, comparing two classification algorithms to identify the most effective solution.
 
@@ -47,35 +47,37 @@ Customer churn costs telecom companies **billions annually**. Identifying at-ris
 A binary classification system that predicts churn probability using customer demographics, usage patterns, and service history. The system achieves **86.2% ROC-AUC** and identifies **79% of actual churners**.
 
 ### Why This Project Matters
-- ✅ **Complete ML lifecycle** from data to deployment
-- ✅ **Rigorous comparison** of multiple algorithms
-- ✅ **Production-ready code** with testing and CI/CD
-- ✅ **Interactive dashboard** for business users
-- ✅ **Docker support** for easy deployment
+-  **Complete ML lifecycle** from data to deployment
+-  **Rigorous comparison** of multiple algorithms
+-  **Production-ready code** with testing and CI/CD
+-  **Interactive dashboard** for business users
+-  **Docker support** for easy deployment
 
 ---
 ### Module dependency graph
 <img width="4774" height="231" alt="deepseek_mermaid_20260607_856d57" src="https://github.com/user-attachments/assets/a087e75d-566d-457e-ab65-afede0c44fc5" />
 <img width="3597" height="2791" alt="deepseek_mermaid_20260607_bfe41d" src="https://github.com/user-attachments/assets/af3bd0e7-c8e5-4b92-ac14-1da0e328256b" />
 
-## 🏆 Key Results
+##  Key Results
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | 
 |-------|----------|-----------|--------|----------|---------|
 | Logistic Regression | 80.1% | 62.4% | 71.8% | 66.7% | 0.803 |
 | **Random Forest** | **84.9%** | **69.6%** | **78.9%** | **74.0%** | **0.862** |
 
-### Winner: Random Forest Classifier 🏆
+### Winner: Random Forest Classifier 
 
 **Why Random Forest won:**
-- 📈 **+5.9%** higher ROC-AUC (better class separation)
-- 🎯 **+7.3%** higher F1-Score (better precision-recall balance)
-- 🔍 **+7.1%** higher recall (finds more actual churners)
-- 🌲 Handles non-linear relationships automatically
+-  **+5.9%** higher ROC-AUC (better class separation)
+-  **+7.3%** higher F1-Score (better precision-recall balance)
+-  **+7.1%** higher recall (finds more actual churners)
+-  Handles non-linear relationships automatically
 
 ---
 
-## 🎬 Live Demo
+## DEMO
+https://www.google.com/search?q=ml+prediction+image&oq=ml+prediction+image+&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORifBTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRifBTIHCAUQIRifBTIHCAYQIRiPAjIHCAcQIRiPAtIBCDUwODRqMGo3qAIUsAIB8QXCNxX9pbT1JA&client=ms-android-oppo-terr1-rso2&sourceid=chrome-mobile&ie=UTF-8#sv=CAMScRoyKhBlLXdtUjRVX25UZHpNMTFNMg53bVI0VV9uVGR6TTExTToOZmhqbkM2RVVVRDFwT00gBCoxChtfTWVZbWF2bUNDYk9Xc2VNUDM3YnppUVFfNDESEGUtd21SNFVfblRkek0xMU0YADABSgQIARACGAcg_sC80wpKCBACGAEgAigB
+
 
 
 ### Web Application Interface
