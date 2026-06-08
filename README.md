@@ -76,9 +76,6 @@ A binary classification system that predicts churn probability using customer de
 ---
 
 ## DEMO
-https://www.google.com/search?q=ml+prediction+image&oq=ml+prediction+image+&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORifBTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRifBTIHCAUQIRifBTIHCAYQIRiPAjIHCAcQIRiPAtIBCDUwODRqMGo3qAIUsAIB8QXCNxX9pbT1JA&client=ms-android-oppo-terr1-rso2&sourceid=chrome-mobile&ie=UTF-8#sv=CAMScRoyKhBlLXdtUjRVX25UZHpNMTFNMg53bVI0VV9uVGR6TTExTToOZmhqbkM2RVVVRDFwT00gBCoxChtfTWVZbWF2bUNDYk9Xc2VNUDM3YnppUVFfNDESEGUtd21SNFVfblRkek0xMU0YADABSgQIARACGAcg_sC80wpKCBACGAEgAigB
-
-
 
 ### Web Application Interface
 
