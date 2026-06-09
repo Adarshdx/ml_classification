@@ -1,0 +1,48 @@
+# Project Configuration
+data:
+  raw_path: "data/raw/telco_churn.csv"
+  processed_path: "data/processed/"
+  test_size: 0.2
+  random_state: 42
+
+models:
+  logistic_regression:
+    max_iter: 1000
+    class_weight: "balanced"
+    C: 1.0
+    
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+    class_weight: "balanced"
+    random_state: 42
+
+training:
+  cv_folds: 5
+  scoring: "roc_auc"
+  cv_shuffle: true
+  
+features:
+  numeric_features:
+    - tenure
+    - monthly_charges
+    - total_charges
+    - age
+    - num_services
+    - payment_delay_days
+    - complaints
+  categorical_features:
+    - contract_monthly
+    - contract_yearly
+    - paperless_billing
+
+visualization:
+  figure_size: [10, 6]
+  dpi: 150
+  style: "seaborn-v0_8-darkgrid"
+  
+web_app:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
