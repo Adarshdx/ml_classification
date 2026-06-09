@@ -1,0 +1,28 @@
+# You can generate this data by running this Python script:
+import pandas as pd
+import numpy as np
+
+np.random.seed(42)
+n = 5000
+
+data = {
+    'tenure': np.random.randint(1, 72, n),
+    'monthly_charges': np.random.uniform(20, 120, n),
+    'total_charges': np.random.uniform(100, 8000, n),
+    'age': np.random.randint(18, 70, n),
+    'num_services': np.random.randint(1, 8, n),
+    'payment_delay_days': np.random.exponential(5, n),
+    'complaints': np.random.poisson(0.5, n),
+    'contract_monthly': np.random.choice([0,1], n, p=[0.6,0.4]),
+    'contract_yearly': np.random.choice([0,1], n, p=[0.85,0.15]),
+    'paperless_billing': np.random.choice([0,1], n, p=[0.5,0.5]),
+    'churn': np.random.choice([0,1], n, p=[0.73,0.27])
+}
+
+df = pd.DataFrame(data)
+# Make churn more realistic based on features
+df['churn'] = ((df['tenure'] < 12) & (df['monthly_charges'] > 60) | 
+               (df['payment_delay_days'] > 10) | 
+               (df['complaints'] > 2)).astype(int)
+df.to_csv('data/telco_churn.csv', index=False)
+print("Data created!")
