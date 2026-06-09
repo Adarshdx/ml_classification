@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  churn-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ../models:/app/models
+      - ../reports:/app/reports
+    restart: unless-stopped
+
+  jupyter:
+    image: jupyter/datascience-notebook:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../notebooks:/home/jovyan/work/notebooks
+      - ../data:/home/jovyan/work/data
+      - ../src:/home/jovyan/work/src
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: start-notebook.sh --NotebookApp.token=''
