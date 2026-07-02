@@ -77,5 +77,4 @@ A binary classification system that predicts churn probability using customer de
 
 ## DEMO
 <img width="1325" height="892" alt="Screenshot 2026-06-09 212430" src="https://github.com/user-attachments/assets/0350e1b2-df77-45fe-ace8-15fb2ffd7414" />
-.
 
