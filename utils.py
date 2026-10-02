@@ -60,4 +60,3 @@ if __name__ == "__main__":
     df = create_churn_data(1000, 'data/test_data.csv')
     print("Utility functions ready!")
 .
-.
