@@ -1,4 +1,4 @@
-# You can generate this data by running this Python script:
+
 import pandas as pd
 import numpy as np
 
