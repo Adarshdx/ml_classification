@@ -1,4 +1,3 @@
-# Utility functions for the classification project
 
 import pandas as pd
 import numpy as np
